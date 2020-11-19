@@ -37,7 +37,7 @@ for i in tqdm.notebook.tqdm(real_cate):
     browser.find_element_by_css_selector('#sourceEditArea > button').click() # Clear input box
     time.sleep(2)
 ```
-크롤링 결과 상품의 소분류 정보가 모두 한글로 변경되
+크롤링 결과 상품의 소분류 정보가 모두 한글로 변경되었습니다.
 <br>
 
 ## 1. 데이터 핸들링 
