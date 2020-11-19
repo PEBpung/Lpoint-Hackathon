@@ -37,6 +37,7 @@ for i in tqdm.notebook.tqdm(real_cate):
     browser.find_element_by_css_selector('#sourceEditArea > button').click() # Clear input box
     time.sleep(2)
 ```
+크롤링 결과 상품의 소분류 정보가 모두 한글로 변경되
 <br>
 
 ## 1. 데이터 핸들링 
@@ -108,10 +109,10 @@ df_data.head()
 #### 데이터 소개
 총 4개의 파일이 있습니다.
 
-online = 고객의 온라인 행동 정보 데이터입니다.
-trade = 거래 정보 데이터 입니다. online과 고객ID, 거래ID로 이어져 있고, item과 상품코드로 이어져 있습니다.
-customer = 고객 정보를 답고 있는 데이터입니다.
-item = 상품 분류 코드를 담고 있는 데이터입니다.
+- online = 고객의 온라인 행동 정보 데이터입니다.
+- trade = 거래 정보 데이터 입니다. online과 고객ID, 거래ID로 이어져 있고, item과 상품코드로 이어져 있습니다.
+- customer = 고객 정보를 답고 있는 데이터입니다.
+- item = 상품 분류 코드를 담고 있는 데이터입니다.
 
 ### EDA
 #### 행동 유형 시각화
