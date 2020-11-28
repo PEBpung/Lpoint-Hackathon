@@ -3,3 +3,8 @@
 /.ipynb_checkpoints
 *.csv
 DATA/
+*.zip
+/image
+*.model
+*.pkl
+*.npy
