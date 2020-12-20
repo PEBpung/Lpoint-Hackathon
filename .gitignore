@@ -8,3 +8,7 @@ DATA/
 *.model
 *.pkl
 *.npy
+data/
+ckpt/
+save/
+model/
