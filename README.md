@@ -91,14 +91,14 @@
 
 - 온라인 행동 유형 시각화
 
-    ![image/Untitled%203.png](image/Untitled%203.png)
+    <img src="image/Untitled%203.png" width="90%" height="90%">
 
     - 결제 시도와 구매 완료의 차이가 많이남.
     - 분석 결과 결제 시도 과정에서 중복이 많음.
 
 - 일자별 활동량 추이
 
-    ![image/Untitled%204.png](image/Untitled%204.png)
+    <img src="image/Untitled%204.png" width="90%" height="90%">
 
     - 일자 별로 활동량을 그래프로 나타냄.
     - 분석 결과 요일 별로 특정 패턴을 가지고 있음.
@@ -107,7 +107,7 @@
 
 - 고객 분포
 
-    ![image/Untitled%205.png](image/Untitled%205.png)
+    <img src="image/Untitled%205.png" width="90%" height="90%">
 
     - 고객의 성별은 여성이 가장 많고, 나이는 30~40대가 대다수를 차지.
     - 성별과 나이로 고객 타입을 분류한 후 분석한 결과 구매 품목 차이를 보임.
@@ -127,28 +127,29 @@
 
 1. 누적 행동 데이터 생성
 
-    ![image/Untitled%207.png](image/Untitled%207.png){: width="50%" height="50%"}
+    <img src="image/Untitled%207.png" width="90%" height="90%">
 
     - 기존 데이터는 고객의 과거 행동 이력을 반영하고 있지 않음.
     - 행동 변수를 dummy화 시킨 후, 동일 Session 내에서 특정 행동의 빈도를 누적 시켜줌.
 
 2. 최근 행동 데이터
 
-    ![image/Untitled%208.png](image/Untitled%208.png)
+    <img src="image/Untitled%208.png" width="90%" height="90%">
 
     - 최근 행동 데이터에는 고객이 최근 활동한 시간과 서핑 속도를 반영해줌.
     - 그 결과 고객의 행동 패턴을 더 잘 표현 할 수 있었음.
 
 3. 선호 채널과 기기
 
-    ![image/Untitled%209.png](image/Untitled%209.png)
+    <img src="image/Untitled%209.png" width="80%" height="80%">
+
 
     - 시각화 결과 같은 기기라도 유입채널이 다르면 다른 분포를 가지고 있음.
     - 두 변수를 묶어줌으로 선호하는 경로를 데이터에 반영해줌.
 
 4. 외부 데이터 (기상청)  
 
-    ![image/Untitled%2010.png](image/Untitled%2010.png)
+    <img src="image/Untitled%2010.png" width="80%" height="80%">
 
     - EDA 결과에서 날짜 별로 일정 패턴이 존재함을 확인.
     - 좀 더 세밀한 분석을 위해 기상 데이터를 활용.
