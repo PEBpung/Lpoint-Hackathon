@@ -4,7 +4,6 @@
 *.csv
 DATA/
 *.zip
-/image
 *.model
 *.pkl
 *.npy
