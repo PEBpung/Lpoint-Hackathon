@@ -91,14 +91,14 @@
 
 - 온라인 행동 유형 시각화
 
-    <img src="image/Untitled%203.png" width="90%" height="90%">
+    <img src="image/Untitled%203.png" width="80%" height="80%">
 
     - 결제 시도와 구매 완료의 차이가 많이남.
     - 분석 결과 결제 시도 과정에서 중복이 많음.
 
 - 일자별 활동량 추이
 
-    <img src="image/Untitled%204.png" width="90%" height="90%">
+    <img src="image/Untitled%204.png" width="80%" height="80%">
 
     - 일자 별로 활동량을 그래프로 나타냄.
     - 분석 결과 요일 별로 특정 패턴을 가지고 있음.
@@ -107,7 +107,7 @@
 
 - 고객 분포
 
-    <img src="image/Untitled%205.png" width="90%" height="90%">
+    <img src="image/Untitled%205.png" width="80%" height="80%">
 
     - 고객의 성별은 여성이 가장 많고, 나이는 30~40대가 대다수를 차지.
     - 성별과 나이로 고객 타입을 분류한 후 분석한 결과 구매 품목 차이를 보임.
@@ -116,7 +116,7 @@
 
 기존의 키워드명은 특정 상품을 설명하기에 어려운 단점이 있었습니다. 그래서 Item 데이터에 있는 명칭과 매칭하기 위해 크롤링을 진행했습니다. 
 
-![image/Untitled%206.png](image/Untitled%206.png)
+<img src="image/Untitled%206.png" width="90%" height="90%" >
 
 - 검색 행동과 상품의 직접적인 연관성을 파악하기 위해서 크롤링 진행.
 - 크롤링을 통해 키워드를 Item 데이터에 있는 분류명으로 변경.
@@ -127,14 +127,14 @@
 
 1. 누적 행동 데이터 생성
 
-    <img src="image/Untitled%207.png" width="90%" height="90%">
+    <img src="image/Untitled%207.png" width="80%" height="80%">
 
     - 기존 데이터는 고객의 과거 행동 이력을 반영하고 있지 않음.
     - 행동 변수를 dummy화 시킨 후, 동일 Session 내에서 특정 행동의 빈도를 누적 시켜줌.
 
 2. 최근 행동 데이터
 
-    <img src="image/Untitled%208.png" width="90%" height="90%">
+    <img src="image/Untitled%208.png" width="80%" height="80%">
 
     - 최근 행동 데이터에는 고객이 최근 활동한 시간과 서핑 속도를 반영해줌.
     - 그 결과 고객의 행동 패턴을 더 잘 표현 할 수 있었음.
@@ -158,7 +158,7 @@
 
 User가 같이 구매한 Item의 특징을 분석하면 같은 품목을 구매한 다른 User와 상관관계를 분석할 수 있다고 판단하였습니다. 
 
-![image/Untitled%2011.png](image/Untitled%2011.png)
+<img src="image/Untitled%2011.png" width="90%" height="90%">
 
 - Row별로 한개 씩 있는 제품을 고객과 세션을 기준으로 장바구니로 묶어줌.
 - Cosine Similarity로 평가한 결과 유사한 상품 구매의 경우 벡터의 위치가 가까움.
@@ -167,7 +167,7 @@ User가 같이 구매한 Item의 특징을 분석하면 같은 품목을 구매�
 
 Feature engineering과 User2Vec을 마친 후 변수의 중요도를 시각화 해보았습니다. base model인 LGBM 모델을 돌려서 성능 저하가 발생하면 feature을 제거하는 방법을 선택했습니다. 
 
-![image/Untitled%2012.png](image/Untitled%2012.png)
+<img src="image/Untitled%2012.png" width="80%" height="80%">
 
 - 중요도 파악 결과 Positive 변수와 Negative 변수로 나눔.
 - Negative 변수는 추후 모델을 돌릴 때 제거시킴.
@@ -189,9 +189,11 @@ Feature engineering과 User2Vec을 마친 후 변수의 중요도를 시각화 �
     ![image/Untitled%2014.png](image/Untitled%2014.png)
 
     - 사용 이유 : 추천 점수가 높은 순서로 top-k 개의 아이템을 추천할 때, 상위 추천 아이템을 구매한 것에 더 가중치를 주어서 추천 순서를 차등적으로 평가함.
+
+
 - Entropy-Diversity
 
-    ![image/Untitled%2015.png](image/Untitled%2015.png)
+    <img src="image/Untitled%2015.png" width="90%" height="90%">
 
     - 사용 이유 : 모든 사용자에게 비슷한 아이템을 추천하지 않고, 개인별 추천 아이템들이 다양하게 추천하였는지 평가함.
 
